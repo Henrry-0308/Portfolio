@@ -1,0 +1,49 @@
+name: Deploy to Vercel
+
+on:
+  push:
+    branches:
+      - main # Or your production branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20' # Or your preferred Node version
+
+      - name: Install Dependencies
+        run: npm ci # Use 'npm ci' for faster, reliable installs in CI
+
+      - name: Run Linting # Example CI Step
+        run: npm run lint
+
+      - name: Run Tests # Example CI Step
+        run: npm test
+
+      # Optional: Build locally if you want to catch build errors here
+      - name: Build Project
+        run: npm run build
+
+      # Install Vercel CLI AFTER dependency installation
+      - name: Install Vercel CLI
+        run: npm install --global vercel@latest
+
+      # Link project using committed .vercel directory (if you did 'vercel link')
+      # OR set VERCEL_ORG_ID and VERCEL_PROJECT_ID env vars here if not using .vercel dir
+
+      - name: Deploy Project to Vercel
+        # Runs vercel build and vercel deploy --prod
+        # Assumes VERCEL_TOKEN is set in GitHub Secrets
+        # Assumes .vercel dir is present OR VERCEL_ORG_ID & VERCEL_PROJECT_ID are set
+        run: vercel deploy --prod --token=${{ secrets.VERCEL_TOKEN }}
+        # If you didn't commit .vercel:
+        # run: vercel deploy --prod --token=${{ secrets.VERCEL_TOKEN }} --scope=${{ secrets.VERCEL_ORG_ID }}
+        # Note: Vercel often automatically detects the project ID from the Git remote if linked.
+        # You might only need Org ID if the repo is linked to multiple Vercel projects.
+        # The simplest way is usually committing the .vercel directory.
