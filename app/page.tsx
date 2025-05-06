@@ -8,7 +8,6 @@ import ScrollToTop from "@/components/scrollToTop/ScrollToTop"
 import Chat from "@/components/ai-assistant/AI-Assistant"
 
 export default function Home() {
-  console.log(process.env.token, process.env.OPENAI_API_KEY)
   return (
     <>
       <HeroSection />
