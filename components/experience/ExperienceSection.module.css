@@ -1,0 +1,167 @@
+.experience {
+  background: linear-gradient(to bottom, #0c0f26, #0e112c);
+  position: relative;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--neon-blue), var(--neon-purple));
+}
+
+.timelineItem {
+  position: relative;
+  margin-bottom: 3rem;
+  width: 50%;
+  padding: 0 2rem;
+}
+
+.timelineItem:nth-child(odd) {
+  left: 0;
+}
+
+.timelineItem:nth-child(even) {
+  left: 50%;
+}
+
+.timelineItem::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  background: var(--neon-blue);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--neon-blue);
+  z-index: 1;
+}
+
+.timelineItem:nth-child(odd)::before {
+  right: -10px;
+}
+
+.timelineItem:nth-child(even)::before {
+  left: -10px;
+}
+
+.timelineContent {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: 10px;
+  padding: 1.5rem;
+  position: relative;
+}
+
+.timelineItem:nth-child(odd) .timelineContent::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: -10px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid var(--glass-bg);
+}
+
+.timelineItem:nth-child(even) .timelineContent::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -10px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid var(--glass-bg);
+}
+
+.header {
+  margin-bottom: 1rem;
+}
+
+.role {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: var(--neon-blue);
+}
+
+.company {
+  font-size: 1rem;
+  color: var(--foreground);
+  opacity: 0.9;
+}
+
+.period {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--neon-purple);
+  margin-bottom: 1rem;
+}
+
+.description {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.achievements h4 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--neon-green);
+}
+
+.achievements ul {
+  list-style-type: none;
+}
+
+.achievements li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.5;
+}
+
+.achievements li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--neon-green);
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timelineItem {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 0;
+    left: 0 !important;
+  }
+
+  .timelineItem::before {
+    left: 10px !important;
+    right: auto !important;
+  }
+
+  .timelineItem .timelineContent::after {
+    display: none;
+  }
+}
+

@@ -1,0 +1,51 @@
+.card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  border-color: var(--neon-blue);
+  box-shadow: 0 0 15px rgba(0, 245, 255, 0.2);
+}
+
+.name {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--foreground);
+}
+
+.progressContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.progressBar {
+  flex: 1;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--neon-blue), var(--neon-purple));
+  border-radius: 4px;
+}
+
+.level {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--neon-blue);
+  min-width: 40px;
+  text-align: right;
+}
+

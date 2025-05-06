@@ -1,2 +1,2 @@
-# Portfolio
-My portfolio with Chatbot Assistant
+# Portfolio-Chatbot
+My personal portfolio with chatbot assistant.
