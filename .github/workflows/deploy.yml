@@ -41,7 +41,7 @@ jobs:
         # Runs vercel build and vercel deploy --prod
         # Assumes VERCEL_TOKEN is set in GitHub Secrets
         # Assumes .vercel dir is present OR VERCEL_ORG_ID & VERCEL_PROJECT_ID are set
-        run: vercel deploy --prod --token=${{ secrets.VERCEL_TOKEN }}
+        run: vercel deploy --prod --token=${{ secrets.VERCEL_TOKEN }} --OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}
         # If you didn't commit .vercel:
         # run: vercel deploy --prod --token=${{ secrets.VERCEL_TOKEN }} --scope=${{ secrets.VERCEL_ORG_ID }}
         # Note: Vercel often automatically detects the project ID from the Git remote if linked.
