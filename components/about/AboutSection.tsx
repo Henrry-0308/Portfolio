@@ -8,7 +8,6 @@ import AIBrainAnimation from "./AIBrainAnimation";
 import aboutData from "@/data/AboutData";
 
 export default function AboutSection() {
-  console.log(process.env.token, process.env.OPENAI_API_KEY)
   return (
     <section id="about" className={`${styles.about} section`}>
       <div className="container">
