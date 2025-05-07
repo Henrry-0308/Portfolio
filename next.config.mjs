@@ -21,6 +21,10 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
+  reactStrictMode: true,
+  // This creates a .next/standalone directory with a minimal server.js
+  // and necessary node_modules for running your app, including API routes.
+  output: 'standalone',
 }
 
 mergeConfig(nextConfig, userConfig)
