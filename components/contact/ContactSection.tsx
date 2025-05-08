@@ -30,20 +30,28 @@ export default function ContactSection() {
     e.preventDefault()
     setIsSubmitting(true)
 
-    // Simulate form submission
+    e.preventDefault();
+
     try {
-      await new Promise((resolve) => setTimeout(resolve, 1500))
-      setSubmitStatus("success")
-      setFormData({ name: "", email: "", message: "" })
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSubmitStatus("success")
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        setSubmitStatus("error")
+      }
     } catch (error) {
+      console.error("Error sending message:", error);
       setSubmitStatus("error")
     } finally {
       setIsSubmitting(false)
-
-      // Reset status after 5 seconds
-      setTimeout(() => {
-        setSubmitStatus(null)
-      }, 5000)
     }
   }
 
