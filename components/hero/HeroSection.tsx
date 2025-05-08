@@ -71,7 +71,7 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className={styles.cta}
           >
-            <a
+            {/* <a
               href={linkData.resume}
               className={`${styles.button} ${styles.primary}`}
               target="_blank"
@@ -79,7 +79,7 @@ export default function HeroSection() {
             >
               <FileText size={18} />
               <span>View Resume</span>
-            </a>
+            </a> */}
 
             <div className={styles.socialLinks}>
               <a
