@@ -21,7 +21,8 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata = {
   title: `${HeroData.name} | ${HeroData.description[0]}`,
   description: `${HeroData.description[0]}, ${HeroData.description[1]}, and ${HeroData.description[2]}`,
-  generator: 'v0.dev'
+  generator: 'v0.dev',
+  icon: '/favicon.ico',
 }
 
 export default function RootLayout({
