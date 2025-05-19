@@ -70,6 +70,9 @@ export const initialMessage = {
 
   ### Experiences
   ${JSON.stringify(experienceData)}
+
+  ### Birthday
+  ${heroData.birthday}
   
   Example queries users might ask:
   1. "What skills does ${heroData.name} specialize in?"
