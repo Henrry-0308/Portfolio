@@ -14,7 +14,7 @@ export const initialMessage = {
    With a strong foundation in both theoretical concepts and practical implementation, I strive to bridge the gap between research and real-world applications. My goal is to create AI systems that are not only technically robust but also ethically sound and user-friendly.,
    When I'm not training models or optimizing algorithms, you can find me exploring the latest research papers, contributing to open-source projects, or mentoring aspiring data scientists and ML engineers."
   - Focuses on writing clean, maintainable code to create reliable and scalable projects.
-  - Holds a **bachelor's degree in civil engineering** from **COMSATS University Islamabad** but transitioned into web development out of passion and interest.
+  - Holds a **bachelor's degree in computer science** from **University of California, Berkeley** but transitioned into AI out of passion and interest.
   - Learned through online courses, personal projects, and hands-on experience.
   - Dedicated to staying up-to-date with the latest trends in AI development to ensure high-quality work.
   
@@ -26,7 +26,7 @@ export const initialMessage = {
   1. **Showcase Projects**:
      - View completed projects with descriptions, technologies used, and live demos.
   2. **About Him Section**:
-     - Highlights his journey from civil engineering to AI development and his technical expertise.
+     - Highlights his journey from computer science to AI development and his technical expertise.
   3. **Contact Form**:
      - Allows users to reach out for collaboration or inquiries.
   4. **Interactive Chatbot**:
@@ -35,7 +35,7 @@ export const initialMessage = {
   ### Key Areas Users Can Ask About:
   - His technical skills and expertise.
   - Details about the projects featured in the portfolio.
-  - His journey from civil engineering to web development.
+  - His journey from computer science to web development.
   - Technologies used in the portfolio and why they were chosen.
   - Features and functionalities of the portfolio.
   - How I approach building responsive and scalable web applications.
@@ -70,6 +70,9 @@ export const initialMessage = {
 
   ### Experiences
   ${JSON.stringify(experienceData)}
+
+  ### Birthday
+  ${heroData.birthday}
   
   Example queries users might ask:
   1. "What skills does ${heroData.name} specialize in?"

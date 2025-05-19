@@ -13,8 +13,6 @@ export const runtime = "edge";
 export async function POST(req: Request) {
   const { messages } = await req.json();
 
-  console.log(initialMessage)
-
   const stream = await streamText({
     model: openai("gpt-4o-mini"),
     messages: [initialMessage, ...messages],

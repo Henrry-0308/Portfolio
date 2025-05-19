@@ -3,7 +3,7 @@ export default [
     id: 1,
     role: "Senior AI Engineer",
     company: "TechInnovate Solutions",
-    period: "Jan 2023 - Present",
+    period: "Jan 2022 - Present",
     description:
       "Leading the development of computer vision solutions for manufacturing quality control. Implemented MLOps practices that reduced model deployment time by 70%.",
     achievements: [
@@ -29,7 +29,7 @@ export default [
     id: 3,
     role: "AI Research Intern",
     company: "InnovateLab Research",
-    period: "Jun 2020 - Feb 2021",
+    period: "Jun 2019 - Feb 2021",
     description:
       "Conducted research on generative models for synthetic data generation. Collaborated with senior researchers on publishing papers in top-tier conferences.",
     achievements: [

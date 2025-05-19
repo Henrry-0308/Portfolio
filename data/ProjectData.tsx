@@ -7,7 +7,7 @@ export const projectData = [
         image: "/fabric.webp",
         tags: ["Computer Vision", "YOLOv5", "PyTorch", "OpenCV"],
         repoUrl:
-            "https://github.com/shaiiikh/Fabric-Defect-Detection-using-YOLOv5",
+            "https://github.com/Unicorn-0308/Fabric-Defect-Detection-using-YOLOv5",
     },
     {
         id: 2,
@@ -17,7 +17,7 @@ export const projectData = [
         image: "/custom.webp",
         tags: ["NLP", "Transformers", "HuggingFace", "ONNX"],
         repoUrl:
-            "https://github.com/shaiiikh/Custom-Transformer-Based-LLM-for-Text-Summarization",
+            "https://github.com/Unicorn-0308/Custom-Transformer-Based-LLM-for-Text-Summarization",
     },
     {
         id: 3,
@@ -27,7 +27,7 @@ export const projectData = [
         image: "https://images.unsplash.com/photo-1610647752706-3bb12232b3ab?q=80&w=1000&auto=format&fit=crop",
         tags: ["Recommendation Systems", "FastAPI", "React", "TensorFlow"],
         repoUrl:
-            "https://github.com/shaiiikh/AI-Powered-Car-Customization-Advisor",
+            "https://github.com/Unicorn-0308/AI-Powered-Car-Customization-Advisor",
     },
     {
         id: 4,
@@ -36,7 +36,7 @@ export const projectData = [
             "An innovative AI system that solves and generates math problems using emojis, making mathematics more engaging and fun while demonstrating practical applications of machine learning.",
         image: "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?q=80&w=1000&auto=format&fit=crop",
         tags: ["Generative AI", "Math OCR", "LaTeX", "Python"],
-        repoUrl: "https://github.com/shaiiikh/Creative-Math-Problem-Solver",
+        repoUrl: "https://github.com/Unicorn-0308/Creative-Math-Problem-Solver",
     },
     {
         id: 5,
@@ -45,7 +45,7 @@ export const projectData = [
             "A tool that seamlessly translates between pseudocode and C++ code using a custom-trained Seq2Seq transformer model, helping bridge the gap between algorithm design and implementation.",
         image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1000&auto=format&fit=crop",
         tags: ["GANs", "Style Transfer", "Flask", "TensorFlow"],
-        repoUrl: "https://github.com/shaiiikh/CodeTransformer",
+        repoUrl: "https://github.com/Unicorn-0308/CodeTransformer",
     },
     {
         id: 6,
@@ -54,7 +54,7 @@ export const projectData = [
             "A deep learning model using GRU (Gated Recurrent Unit) to generate Urdu poetry (Nazam) in Roman script. Features include custom text generation, a web interface for interaction, and comprehensive poetry generation history.",
         image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1000&auto=format&fit=crop",
         tags: ["NLP", "BERT", "React", "Python"],
-        repoUrl: "https://github.com/shaiiikh/Nazam-Generator-using-GRU",
+        repoUrl: "https://github.com/Unicorn-0308/Nazam-Generator-using-GRU",
     },
 ];
 
